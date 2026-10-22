@@ -1,0 +1,88 @@
+/* ============================================================
+   MUBS Medical Centre — Shared Styles
+   ============================================================ */
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Status badges */
+.badge-pending   { background-color: #ffc107; color: #000; }
+.badge-approved  { background-color: #0d6efd; color: #fff; }
+.badge-completed { background-color: #198754; color: #fff; }
+.badge-cancelled { background-color: #dc3545; color: #fff; }
+
+/* Patient ID card */
+.id-card {
+    max-width: 420px;
+    margin: 0 auto;
+    border: 2px solid #0d6efd;
+    border-radius: 14px;
+    padding: 24px;
+    background: #fff;
+}
+.id-card h5 { color: #0d6efd; }
+
+@media print {
+    nav, footer, .no-print { display: none !important; }
+    .id-card { border: 2px solid #000; }
+}
+
+/* Stat cards on admin dashboard */
+.stat-card {
+    text-align: center;
+    padding: 1.25rem;
+}
+.stat-card h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.stat-card small {
+    color: #6c757d;
+}
+
+/* Login / register centered forms */
+.auth-wrapper {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Table helpers */
+.table-responsive table {
+    vertical-align: middle;
+}
+
+/* Form field spacing shortcut used throughout */
+.form-section .mb-3:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Sick sheet / excuse letter */
+.letter {
+    background: #fff;
+    max-width: 720px;
+    padding: 40px 48px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+}
+@media print {
+    body { background: #fff; }
+    .letter { border: none; max-width: 100%; padding: 0; }
+}
+
+/* Analytics charts */
+.chart-box { position: relative; height: 280px; }
